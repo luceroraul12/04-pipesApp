@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ComunesComponent implements OnInit {
   public texto: string = 'tExto De PrVaCiendo.';
 
+  public fecha: Date = new Date();
+
   constructor() {}
 
   ngOnInit(): void {}

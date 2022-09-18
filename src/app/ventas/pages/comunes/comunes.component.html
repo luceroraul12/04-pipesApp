@@ -1,4 +1,9 @@
-<div class="grid">
+<div>
+  <h1>Pipes Básicos</h1>
+  <p>Los que vienen en Common Module</p>
+</div>
+
+<div class="grid m-2">
   <div class="col-4">
     <p-card header="uppercase" [subheader]="texto">{{
       texto | uppercase
@@ -13,5 +18,35 @@
     <p-card header="titlecase" [subheader]="texto">{{
       texto | titlecase
     }}</p-card>
+  </div>
+</div>
+
+<div>
+  <h1>Pipes Para Fechas</h1>
+  <p>Los que vienen en Common Module</p>
+</div>
+
+<div class="grid m-2">
+  <div class="col-6">
+    <p-card
+      ><ol>
+        <li>fecha. sin pipe</li>
+        <li>fecha | date</li>
+        <li>fecha | date: 'short'</li>
+        <li>fecha | date: 'long'</li>
+        <li>fecha | date: 'personalizado'</li>
+      </ol></p-card
+    >
+  </div>
+  <div class="col-6">
+    <p-card
+      ><ol>
+        <li>{{ fecha }}</li>
+        <li>{{ fecha | date }}</li>
+        <li>{{ fecha | date: "short" }}</li>
+        <li>{{ fecha | date: "long" }}</li>
+        <li>{{ fecha | date: "dd - MMMM - YYYY" }}</li>
+      </ol></p-card
+    >
   </div>
 </div>
