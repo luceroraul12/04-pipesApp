@@ -4,6 +4,7 @@ import { NumerosComponent } from './pages/numeros/numeros.component';
 import { ComunesComponent } from './pages/comunes/comunes.component';
 import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
+import { PrimeNGModule } from '../prime-ng/prime-ng.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { OrdenarComponent } from './pages/ordenar/ordenar.component';
     NoComunesComponent,
     OrdenarComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, PrimeNGModule],
   exports: [
     NumerosComponent,
     ComunesComponent,
