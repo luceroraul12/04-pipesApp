@@ -1,7 +1,17 @@
 <div class="grid">
   <div class="col-4">
-    <p-card header="Pruebas"> </p-card>
+    <p-card header="uppercase" [subheader]="texto">{{
+      texto | uppercase
+    }}</p-card>
   </div>
-  <div class="col-4">prueba</div>
-  <div class="col-4">prueba</div>
+  <div class="col-4">
+    <p-card header="lowercase" [subheader]="texto">{{
+      texto | lowercase
+    }}</p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="titlecase" [subheader]="texto">{{
+      texto | titlecase
+    }}</p-card>
+  </div>
 </div>
