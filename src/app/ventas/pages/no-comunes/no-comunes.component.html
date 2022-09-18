@@ -5,11 +5,37 @@
 
 <div class="grid m-2">
   <div class="col-4">
-    <p-fieldset legend="Titulo" [toggleable]="true"
-      >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-      repellendus ullam sed, nisi blanditiis vero enim sapiente facilis
-      repudiandae. Dolorem sit quasi ducimus itaque neque placeat sequi porro
-      unde velit?</p-fieldset
-    >
+    <p-fieldset legend="i18SelectPipe" [toggleable]="true">
+      <ol>
+        <li *ngFor="let item of personas">
+          Hola, {{ item.nombre }}.
+          {{ item.genero | i18nSelect: map18Select }} al sistema de pruebas.
+        </li>
+      </ol>
+    </p-fieldset>
+  </div>
+  <div class="col-4">
+    <p-fieldset legend="i18PluralPipe" [toggleable]="true">
+      {{ personas.length | i18nPlural: map18Plural }}
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Eliminar ultima persona del arreglo"
+        class="p-button-outlined p-button-rounded p-button-danger"
+        (click)="eliminarUltimaPersona()"
+      ></button>
+      <div *ngIf="personas.length > 0; else sinPersonas">
+        <hr />
+        <ol>
+          <li *ngFor="let item of personas">
+            {{ item.nombre | titlecase }}
+          </li>
+        </ol>
+      </div>
+      <ng-template #sinPersonas>
+        <h1>NO HAY PERSONAS CARGADAS</h1>
+      </ng-template>
+    </p-fieldset>
   </div>
 </div>
