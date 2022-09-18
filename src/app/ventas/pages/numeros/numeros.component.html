@@ -10,4 +10,10 @@
       {{ ventasNetas | number: "1.1-1" }}
     </p-card>
   </div>
+  <div class="col-4">
+    <p-card header="Porcentaje" [subheader]="porcentaje.toString()">
+      <i class="pi pi-porcent"></i>
+      {{ porcentaje | percent: "1.4-4" }}
+    </p-card>
+  </div>
 </div>
