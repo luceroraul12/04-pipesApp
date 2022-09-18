@@ -1,1 +1,13 @@
-<p>numeros works!</p>
+<div>
+  <h1>Pipes Numéricos</h1>
+  <p>Los que vienen en Common Module</p>
+</div>
+
+<div class="grid">
+  <div class="col-4">
+    <p-card header="Ventas Netas" [subheader]="ventasNetas.toString()">
+      <i class="pi pi-dollar"></i>
+      {{ ventasNetas | number: "1.2-2" }}
+    </p-card>
+  </div>
+</div>
