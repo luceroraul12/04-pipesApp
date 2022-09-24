@@ -5,6 +5,7 @@ import { ComunesComponent } from './pages/comunes/comunes.component';
 import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNGModule } from '../prime-ng/prime-ng.module';
+import { VuelaPipe } from '../pipes/volador.pipe';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { PrimeNGModule } from '../prime-ng/prime-ng.module';
     ComunesComponent,
     NoComunesComponent,
     OrdenarComponent,
+    VuelaPipe,
   ],
   imports: [CommonModule, PrimeNGModule],
   exports: [
