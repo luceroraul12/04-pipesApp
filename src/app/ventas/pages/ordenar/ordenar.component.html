@@ -6,7 +6,7 @@
 <p-fieldset legend="i18SelectPipe" [toggleable]="true">
     <h1>contenido xd</h1>
     <h1>tabla</h1>
-    <p-table [value]="listaDeHeroes" responsiveLayout="scroll">
+    <p-table [value]="listaDeHeroes | ordenar" responsiveLayout="scroll">
         <ng-template pTemplate="header">
             <tr>
                 <th>Nombre del Heroe</th>

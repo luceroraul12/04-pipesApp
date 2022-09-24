@@ -1,12 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { heroe } from '../../interfaces/heroes.interface';
 
 @Pipe({
-  name: 'ordenar'
+  name: 'ordenar',
 })
 export class OrdenarPipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(heroes: heroe[]): heroe[] {
+    return heroes.sort((a, b) => a.nombre.localeCompare(b.nombre));
   }
-
 }
