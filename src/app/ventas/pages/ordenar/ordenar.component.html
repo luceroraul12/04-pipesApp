@@ -2,3 +2,24 @@
     <h1>Pipes no comunes</h1>
     <p>Los que vienen en Common Module</p>
 </div>
+
+<p-fieldset legend="i18SelectPipe" [toggleable]="true">
+    <h1>contenido xd</h1>
+    <h1>tabla</h1>
+    <p-table [value]="listaDeHeroes" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nombre del Heroe</th>
+                <th>Puede Volar?</th>
+                <th>Color</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-heroe>
+            <tr>
+                <td>{{heroe.nombre}}</td>
+                <td>{{heroe.vuela}}</td>
+                <td>{{heroe.color}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</p-fieldset>
