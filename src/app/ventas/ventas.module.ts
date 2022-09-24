@@ -6,6 +6,7 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNGModule } from '../prime-ng/prime-ng.module';
 import { VuelaPipe } from './pages/pipes/volador.pipe';
+import { OrdenarPipe } from './pages/pipes/ordenar.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { VuelaPipe } from './pages/pipes/volador.pipe';
     NoComunesComponent,
     OrdenarComponent,
     VuelaPipe,
+    OrdenarPipe,
   ],
   imports: [CommonModule, PrimeNGModule],
   exports: [
