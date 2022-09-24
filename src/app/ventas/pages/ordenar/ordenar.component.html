@@ -4,7 +4,14 @@
 </div>
 
 <p-fieldset legend="i18SelectPipe" [toggleable]="true">
-    <h1>contenido xd</h1>
+    <h1>Ordenamiento</h1>
+    <p-toolbar>
+        <div class="p-toolbar-group-right">
+            <button pButton pRipple type="button" label="Por nombre" class="p-button-info mx-2"></button>
+            <button pButton pRipple type="button" label="Por vuelo" class="p-button-success mx-2"></button>
+            <button pButton pRipple type="button" label="Por color" class="p-button-warning mx-2"></button>
+        </div>
+    </p-toolbar>
     <h1>tabla</h1>
     <p-table [value]="listaDeHeroes | ordenar" responsiveLayout="scroll">
         <ng-template pTemplate="header">
