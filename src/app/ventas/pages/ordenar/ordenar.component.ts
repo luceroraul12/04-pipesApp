@@ -35,6 +35,8 @@ export class OrdenarComponent implements OnInit {
     },
   ];
 
+  tipoOrdenamiento: string = 'default';
+
   constructor() {}
 
   ngOnInit(): void {}
