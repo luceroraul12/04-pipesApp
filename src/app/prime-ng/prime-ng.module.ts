@@ -8,6 +8,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { MenuItem } from 'primeng/api';
 import { FieldsetModule } from 'primeng/fieldset';
 import { RippleModule } from 'primeng/ripple';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [],
@@ -18,6 +19,7 @@ import { RippleModule } from 'primeng/ripple';
     MenubarModule,
     FieldsetModule,
     RippleModule,
+    TableModule,
   ],
 })
 export class PrimeNGModule {}
